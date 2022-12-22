@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variation on a theme - The versatile button</title>
+    <!-- Cheatsheet:
+      
+      https://css-tricks.com/a-complete-guide-to-links-and-buttons/ 
+      https://www.buttoncheatsheet.com/
+      
+    -->
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        height: 1000px;
+        width: 100%;
+    }
+    
+    .container {
+        color: lightblue;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bt {
+        margin: 5px;
+        display: block;
+        cursor: pointer;
+    }
+    
+    .btn1 {
+        color: red;
+        padding: 10px;
+    }
+    
+    .btn2 {}
+</style>
+
+<body>
+    <div class="container">
+        <button class="bt btn1" disabled>Button1</button>
+        <button class="bt btn2">Button2</button>
+        <button class="bt btn3">Button3</button>
+        <button class="bt btn4">Button4</button>
+        <button class="bt btn5">Button5</button>
+        <button class="bt btn6">Button6</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First navbar practice</title>
+    <!-- Style section -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+         :root {
+            --main-bg-color: #41909C;
+            --main-text-color: #FEFAE6;
+            --second-bg-color: #75DAC3;
+            --second-text-color: #FEFAE6;
+            --main-hover: #973E34;
+        }
+        
+        html {
+            /* height: 100%; */
+            height: 1800px;
+            background: linear-gradient(180deg, rgba(221, 221, 228, 1) 0%, rgba(65, 144, 156, 1) 0%, rgba(227, 244, 245, 1) 100%);
+            background-repeat: no-repeat;
+            background-size: auto;
+            /* overflow: hidden; */
+        }
+        
+        body {
+            /* height: 1800px; */
+        }
+        
+        header {
+            align-items: center;
+            /* background-color: var(--main-bg-color); */
+            color: var(--main-text-color);
+            margin: 2px 0;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        
+        nav {
+            margin: 0 5px;
+        }
+        
+        nav span {
+            float: left;
+            margin: 5px;
+            padding: 5px;
+        }
+        
+        ul {
+            display: inline;
+            float: right;
+        }
+        
+        ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            padding: 5px;
+            cursor: pointer;
+            color: var(--main-text-color);
+        }
+        
+        a:hover {
+            /* border-top: 2px dashed black;
+            border-bottom: 2px dashed black; */
+            background-color: var(--second-bg-color);
+            color: var(--main-hover);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="clearfix">
+            <span><a href="#">Logo</a></span>
+            <ul>
+                <li>
+                    <a href="#">Home</a></li>
+                <li>
+                    <a href="#">Product</a></li>
+                <li>
+                    <a href="#">About us</a></li>
+                <li>
+                    <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar practice - 02</title>
+    <!-- Cheatsheet:
+      https://cssgradient.io/ -->
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+     :root {
+        --main-nav-bg: #232D3F;
+        --main-text: #D9D8E2;
+        --second-bg: #4675A3;
+        --second-text: #8FB3C8;
+        --third: #81AACF;
+    }
+    
+    body {
+        width: 99.8%;
+        margin: auto;
+        background-color: var(--second-bg);
+        height: 1800px;
+    }
+    
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        margin-top: 3px;
+        padding: 10px;
+        background-color: var(--main-nav-bg);
+        color: var(--main-text);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        margin: 0 10px;
+        font-weight: 700;
+    }
+    
+    .logo a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .logo span {
+        font-style: italic;
+        color: var(--third)
+    }
+    
+    nav ul {
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 10px 20px;
+        display: inline-block;
+    }
+    
+    nav ul li a {
+        color: var(--second-text);
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    nav ul li a:hover {
+        background-color: var(--third);
+        color: var(--main-text);
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Coder<span>TOM</span></a>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About as</a></li>
+                <li><a href="#">Contact as</a></li>
+                <li><a href="#">Docs</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

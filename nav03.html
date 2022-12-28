@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar practice - 03 - wFlexMenu</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+         :root {
+            --nav-bg-color: #232D3F;
+        }
+        
+        .logo {
+            margin: 0 10px;
+            font-weight: 700;
+        }
+        
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .logo span {
+            font-style: italic;
+            color: var(--third)
+        }
+        
+        header {
+            background-color: var(--nav-bg-color);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        a {
+            text-decoration: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        a:hover {
+            background-color: azure;
+        }
+        
+        nav {
+            margin: 10px 0;
+        }
+        
+        ul li {
+            margin: 0.5rem;
+            display: inline-block;
+        }
+        
+        .submenu {
+            display: none;
+        }
+        
+        .main:hover {
+            background-color: red;
+            .submenu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Coder<span>TOM</span></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About as</a></li>
+                <li><a class="main" href="#">Services</a>
+                    <ul class="submenu">
+                        <li><a href="#">Web Designing</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact as</a></li>
+                <li><a href="#">Docs</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

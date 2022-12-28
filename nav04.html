@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar practice - 03 - wFlexMenu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Cheatsheet:
+    https://youtu.be/wHFflWvii3M -->
+
+    <style>
+        /* Initialize */
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+         :root {
+            --menu-bg-color: #579BB1;
+            --main-bg-color: #E1D7C6;
+            --second-text-color: #0E5E6F;
+            --second-bg-color: #ECE8DD;
+            --third-color: #F8F4EA;
+        }
+        /* Unique CSS */
+        
+        body {
+            background-color: var(--main-bg-color);
+        }
+        
+        nav {
+            text-align: center;
+            background-color: var(--menu-bg-color);
+            margin: 10px 0;
+        }
+        
+        .main-menu {
+            display: inline-flex;
+            list-style: none;
+            margin: 5px;
+            position: relative;
+        }
+        
+        .main-menu li {
+            display: inline-block;
+            margin: 5px;
+            padding: 15px;
+        }
+        
+        .main-menu a {
+            color: var(--third-color);
+            padding: 10px;
+        }
+        
+        .active,
+        .main-menu li:hover {
+            background-color: var(--second-text-color);
+            border-radius: 10px;
+        }
+        
+        .sub-menu {
+            display: none;
+            border: 2px dotted red;
+        }
+        
+        nav ul i {
+            margin-right: 5px;
+            font-size: 14px;
+        }
+        
+        .main-menu li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: -10px;
+            background-color: var(--menu-bg-color);
+            border-radius: 8px;
+        }
+        
+        .sub-menu ul {
+            display: block;
+            margin: 10px;
+        }
+        
+        .sub-menu li {
+            background-color: var(--menu-bg-color);
+            display: block;
+            width: 110px;
+            padding: 8px 0;
+            margin-bottom: 12px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+        
+        .sub-menu li:last-child {
+            border-bottom: none;
+        }
+        
+        .sub-menu a:hover {
+            background-color: transparent;
+            color: var(--second-text-color)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li><a class="active" href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i>About us</a></li>
+                <li><a href="#"><i class="fa-solid fa-clone"></i>Sevices</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">SEO</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-edit"></i>Training</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

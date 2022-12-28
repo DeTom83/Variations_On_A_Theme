@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar practice - 02</title>
+    <title>Navbar practice - 02 - wFlex</title>
     <!-- Cheatsheet:
       https://cssgradient.io/ -->
 </head>
 <style>
+    /* Initialize */
+    
     * {
         box-sizing: border-box;
         margin: 0;
@@ -32,6 +34,7 @@
     }
     
     header {
+        display: flex;
         position: sticky;
         top: 0;
         left: 0;
@@ -39,7 +42,6 @@
         padding: 10px;
         background-color: var(--main-nav-bg);
         color: var(--main-text);
-        display: flex;
         justify-content: space-between;
         align-items: center;
     }
